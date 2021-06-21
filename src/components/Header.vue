@@ -45,6 +45,7 @@
             <h2 clasS="mentoring">Distant Mentoring Program</h2>
             <div class="button">
                 <p>Download free guidebook</p> 
+                <i class="fas fa-long-arrow-alt-right"></i>
             </div>
             </div>
         </div>
@@ -59,7 +60,13 @@ export default {
 
 <style lang="scss" scoped>
  @import '~@fortawesome/fontawesome-free/css/all.min.css';
- @import "~@fontsource/roboto";
+ @import "~@fontsource/poppins/200.css";
+ @import "~@fontsource/poppins/400.css";
+ @import "~@fontsource/poppins/600.css";
+ @import "~@fontsource/poppins/700.css";
+ @import "~@fontsource/poppins/800.css";
+
+
 
 
     .nav_menu {
@@ -71,6 +78,7 @@ export default {
         padding: 0 7%;
         // justify-content: space-between;
         align-items: center;
+        font-family: poppins;
         height: 60px;
         background-color: white;
 
@@ -84,13 +92,13 @@ export default {
             
             li {
                 display: inline-block;
-                margin: 0 15px;
+                margin: 0 10px;
                 
                 a {
                     text-decoration: none;
                     color: black;
-                    font-weight: 200;
-                    font-size: 14px;
+                    font-weight: 400;
+                    font-size: 12px;
                     padding: 0 5px;
                 }
                 i {
@@ -123,17 +131,50 @@ export default {
         height: 550px;
         margin-top: 60px;
         background-image: url('../assets/images/home-3-hero-bg.jpg');
-        background-size: contain;
+        background-size: cover;
         
         .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font-family: poppins;
             color: white;
             .title {
                 font-size: 28px;
-                font-weight: 700;
+                font-weight: 600;
+                margin: 5px;
+            }
+            .mentoring {
+                font-size: 46px;
+                font-weight: 400;
+                line-height: 46px;
+            }
+            .button {
+                width: 250px;
+                padding: 15px;
+                margin-top: 25px;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 10px;
+                font-weight: 800;
+                background-color: white;
+                color: #36af96;
+                p {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                i {
+                    font-size: 12px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+                    background-color: #36af96;
+                }
             }
         }
     }
