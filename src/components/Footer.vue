@@ -1,6 +1,6 @@
 <template>
   <footer>
-      <div class="links">
+    <div class="links">
 
         <div>
             <h2 class="title">Address</h2>
@@ -25,11 +25,13 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="informations">
             <h2 class="title">Information</h2>
-            <li v-for="(info, index) in informations" :key="index">
-                <p>{{ info}}</p>
-            </li>
+            <ul>
+                <li v-for="(info, index) in informations" :key="index">
+                    <p>{{ info }}</p>
+                </li>
+            </ul>
         </div>
       </div>
       <div class="copy">
@@ -43,7 +45,7 @@ export default {
     name: "Footer",
     props: {
         explore: Array,
-        Informations: Array
+        informations: Array
     }
 }
 </script>
@@ -78,10 +80,15 @@ export default {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 130px;
+            height: 120px;
             list-style: none;
             li {
                 margin-right: 50px;
+            }
+        }
+        .informations {
+            ul {
+                height: 160px;
             }
         }
         div {
