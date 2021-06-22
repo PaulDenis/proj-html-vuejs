@@ -24,11 +24,8 @@ export default {
 
 <style lang="scss" scoped>
  @import '~@fortawesome/fontawesome-free/css/all.min.css';
- @import "~@fontsource/poppins/200.css";
  @import "~@fontsource/poppins/400.css";
  @import "~@fontsource/poppins/600.css";
- @import "~@fontsource/poppins/700.css";
- @import "~@fontsource/poppins/800.css";
 
     .work {
         height: 500px;
@@ -67,6 +64,7 @@ export default {
         }
         .guide {
             font-size: 12px;
+            color: #706c69;
             span {
                 border-bottom: 1px solid lightgray;
                 font-weight: 600;
