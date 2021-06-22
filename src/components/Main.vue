@@ -6,6 +6,7 @@
             <UpgradeLife/>
             <Courses/>
         </div>
+        <Testimonials/>
         
     </div>
 </template>
@@ -15,6 +16,7 @@ import WorkCulture from './WorkCulture.vue'
 import Stats from './Stats.vue'
 import UpgradeLife from './UpgradeLife.vue'
 import Courses from './Courses.vue'
+import Testimonials from './Testimonials.vue'
 
 export default {
     name: "Main",
@@ -22,7 +24,8 @@ export default {
         WorkCulture,
         Stats,
         UpgradeLife,
-        Courses
+        Courses,
+        Testimonials
     }
 
 }
