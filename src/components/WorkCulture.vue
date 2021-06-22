@@ -46,7 +46,7 @@ export default {
             span {
                 border-bottom: 1px solid lightgray;
                 font-weight: 600;
-                color: #21ad96;
+                color: $main_color;
                 cursor: pointer;
             }
         }

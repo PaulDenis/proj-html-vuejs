@@ -48,6 +48,7 @@ export default {
  @import "~@fontsource/poppins/600.css";
  @import "~@fontsource/poppins/700.css";
  @import "~@fontsource/poppins/800.css";
+ @import "../style/common.scss";
 
 
 
@@ -105,7 +106,7 @@ export default {
                 position: relative;
                 left: -35px;
                 font-size: 12px;
-                color: #36af96;
+                color: $main_color;
             }
         }
     }
@@ -146,7 +147,7 @@ export default {
                 font-size: 10px;
                 font-weight: 800;
                 background-color: white;
-                color: #36af96;
+                color: $main_color;
                 p {
                     display: inline-block;
                     margin-right: 10px;
@@ -157,7 +158,7 @@ export default {
                 &:hover {
                     cursor: pointer;
                     color: white;
-                    background-color: #36af96;
+                    background-color: $main_color;
                 }
             }
         }
