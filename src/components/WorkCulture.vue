@@ -26,6 +26,7 @@ export default {
  @import '~@fortawesome/fontawesome-free/css/all.min.css';
  @import "~@fontsource/poppins/400.css";
  @import "~@fontsource/poppins/600.css";
+ @import "../style/common.scss";
 
     .work {
         height: 500px;
@@ -38,30 +39,7 @@ export default {
         float: left;
         width: 35%;
         margin-top: 150px;
-        .subtitle {
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-size: 14px;
-            color: #706c69;
-            span {
-                font-weight: 600;
-            }
-        }
-        .title {
-            font-size: 34px;
-            font-weight: 600;
-            line-height: 40px;
-            margin-bottom: 20px;
-            span {
-                font-weight: 400;
-                color: #21ad96;
-            }
-        }
-        .mainText {
-            margin-bottom: 25px;
-            font-size: 12px;
-            color: #706c69;
-        }
+        @include text_rules;
         .guide {
             font-size: 12px;
             color: #706c69;
