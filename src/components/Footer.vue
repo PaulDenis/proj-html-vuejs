@@ -19,20 +19,17 @@
         <div class="explore">
             <h2 class="title">Explore</h2>
             <ul>
-                <li><p>Start here</p></li>
-                <li><p>Bolog</p></li>
-                <li><p>About us</p></li>
-                <li><p>Success story</p></li>
-                <li><p>Courses</p></li>
-                <li><p>Contact us</p></li>
+                <li
+                v-for="(link, index) in explore" :key="index">
+                <p>{{link}}</p>
+                </li>
             </ul>
         </div>
         <div>
             <h2 class="title">Information</h2>
-            <p>Membership</p>
-            <p>Purchase guide</p>
-            <p>Privacy policy</p>
-            <p>Terms of service</p>
+            <li v-for="(info, index) in informations" :key="index">
+                <p>{{ info}}</p>
+            </li>
         </div>
       </div>
       <div class="copy">
@@ -43,7 +40,11 @@
 
 <script>
 export default {
-
+    name: "Footer",
+    props: {
+        explore: Array,
+        Informations: Array
+    }
 }
 </script>
 

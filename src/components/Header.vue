@@ -4,30 +4,10 @@
         <div class="nav_menu">
             <div class="links">
                 <ul class="inline_menu">
-                    <li>
-                        <a href="#">Home</a>
+                    <li v-for="(link,index) in links" :key="index">
+                        <a href="#">{{ link }}</a>
                         <i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                        <i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Courses</a>
-                        <i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                        <i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                        <i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                        <i class="fas fa-chevron-down"></i>
-                    </li>
+                    </li>              
                 </ul>
             </div>
             <img src="../assets/images/dark-logo.png" alt="MaxCoach logo" class="logo">
@@ -54,7 +34,10 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    props: {
+        links: Array
+    }
 }
 </script>
 

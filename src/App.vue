@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header
+    :links="mainLinks" />
 
 
-    <Footer/>
+    <Footer
+    :explore="exploreLinks"
+    :informations="informationLinks"/>
   </div>
 </template>
 
@@ -16,6 +19,13 @@ export default {
   components: {
     Header,
     Footer
+  },
+  data() {
+    return {
+      mainLinks: ["Home","Pages","Courses","Features","Blog","Shop"],
+      exploreLinks: ["Start here","Blog", "About us", "Success story", "Courses", "Contact us"],
+      informationLinks: ["Membership","Purchase guide","Privacy policy","Terms of service"]
+    }
   }
 }
 </script>
