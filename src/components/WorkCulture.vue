@@ -46,8 +46,11 @@ export default {
             span {
                 border-bottom: 1px solid lightgray;
                 font-weight: 600;
-                color: $main_color;
-                cursor: pointer;
+                color:black;
+                &:hover {
+                    cursor: pointer;
+                    color: $main_color;
+                }
             }
         }
     }

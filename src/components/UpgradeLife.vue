@@ -78,7 +78,11 @@ export default {
             font-size: 12px;
             font-weight: 600;
             border-bottom: 1px solid lightgray;
-            cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+                color: $main_color;
+            }
         }
     }
     .clearfix::after {

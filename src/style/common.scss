@@ -25,4 +25,12 @@ $main-color: #21ad96;
             font-size: 11px;
             color: #706c69;
         }
+    }
+
+@mixin clearfix {
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
