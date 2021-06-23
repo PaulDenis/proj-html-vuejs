@@ -7,6 +7,9 @@
             <Courses/>
         </div>
         <Testimonials/>
+        <Transform/>
+        <Blogs/>
+        <Newsletter/>
         
     </div>
 </template>
@@ -17,6 +20,9 @@ import Stats from './Stats.vue'
 import UpgradeLife from './UpgradeLife.vue'
 import Courses from './Courses.vue'
 import Testimonials from './Testimonials.vue'
+import Transform from './Transform.vue'
+import Blogs from './Blogs.vue'
+import Newsletter from './Newsletter.vue'
 
 export default {
     name: "Main",
@@ -25,7 +31,10 @@ export default {
         Stats,
         UpgradeLife,
         Courses,
-        Testimonials
+        Testimonials,
+        Transform,
+        Blogs,
+        Newsletter
     }
 
 }

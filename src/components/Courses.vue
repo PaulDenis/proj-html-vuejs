@@ -93,16 +93,7 @@ export default {
             color: #4f4f4f;
         }
         .icons {
-            display: flex;
-            font-size: 10px;
-            color: #a8a6b9;
-            
-            p {
-                margin-right: 20px;
-                i {
-                    margin-right: 5px;
-                }
-            }
+            @include infos;
             
         }
         
