@@ -7,12 +7,12 @@
             <p>382 NE 191st St # 87394 Miami, FL 33179-3899</p>
             <p>+1(305)547-9909 (9am - 5pm EST, Monday - Friday</p>
             <p>support@maxcoach.com</p>
-            <div class="social">
+            <div id="social">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
                 </ul>
             </div>
         </div>
@@ -72,8 +72,7 @@ export default {
         width: 75%;
         padding-top: 50px;
         margin: auto;
-        // margin-bottom: 20px;
-        justify-content: center;
+        justify-content: space-around;
         text-align: left;
 
         ul {
@@ -86,13 +85,26 @@ export default {
                 margin-right: 50px;
             }
         }
+        .explore {
+            ul {
+                height: 140px;
+                li {
+                    width: 70px;
+                }
+
+            }
+        }
         .informations {
             ul {
-                height: 160px;
+                height: 170px;
+                li {
+                    width: 90px;
+                }
             }
         }
         div {
-            margin: 0 100px;
+            display: inline-block;
+            // margin-right: 70px;
         }
         .title {
             font-size: 14px;
@@ -107,6 +119,20 @@ export default {
             }
         }
         
+    }
+    #social {
+        margin-left: 0;
+        margin-top: 20px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            li {
+                margin-right: 25px;
+                font-size: 20px;
+            }
+        }
     }
     .copy {
             padding-bottom: 25px;
